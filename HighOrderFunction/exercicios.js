@@ -73,12 +73,11 @@ console.log(maiorNumero([12, 23, 312, 4, 1, 721, 235])); // 721
 
 //
 
-
-    const numerosPares = array.filter((x)=> {
-        if (x % 2 === 0) ? true : false;
-        console.log(x)
-
-
+    const array4 = [12.3123,1234,4,6,6,1,213,44,,6,123,4,6,132,,4,12,123,4,1,]
+    const numerosPares = array4.filter((x)=> {
+        if (x % 2 === 0){
+            console.log("Todos os numeros pares", x )
+        }
     })
 
-    console.log(numerosPares(10,20,30,40,50,607,70))
+   

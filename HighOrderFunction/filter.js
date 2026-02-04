@@ -9,6 +9,7 @@ const { childrenAge,mailList} = require("./data");
 
 //IMUTABILIDADE
                                             //function(elemento) {
+                                            //usando arrow function
                                         
 const childrenAgeFiltradas = childrenAge.filter((elemento) => {
                                         // boolean aqui, faz uma verifação de true or falso usando "?"
@@ -22,7 +23,7 @@ console.log(childrenAgeFiltradas)
 
 //filtrar os emails
 
-
+                                     //function(mail) { faz a busca por parte usando .includes
 const filteredMails = mailList.filter(mail => mail.includes("@rocketseat.com"))
 
 console.log(filteredMails)
