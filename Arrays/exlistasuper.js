@@ -109,22 +109,68 @@ const despesas = [120, 80, 45.5, 200, 60];
 //nivel 8
 
 const notas = [7, 5, 9, 3, 8];
-        soma = 0
+      
       
         for( g = 0; g < notas.length; g++){
-            soma += notas[g];
-            media = soma/ notas.length;
-
-            
+            if (notas[g] >= 7){
+                console.log("Voce foi aprovado, sua nota foi", notas[g]);
+            }else{
+                console.log("Voce foi reprovado, sua nota foi", notas[g])
+            }
         }
-        console.log(media)
-
+          
+            
+            
     
  //nivel 9
+    const mensagens = ['Pedido confirmado', 'Pagamento aprovado', 'Produto enviado'];
+        
+    
+        mensagens.forEach(mensagens => {
+            if (mensagens.forEach = true){
+                console.log("Notificação:", mensagens);
+            }else{
+                console.log("Voce ainda nao fez a solitação do pagamento")
+
+            }
+        }
+
+    )
+
+//nivel 10
+    
+
+        
+    
+
+//nivel 11 
+
+const pedidos1 = ['camiseta', 'calça', 'tênis'];
+    let pedidos2 = [];
+
+
+//nivel 12
+const livros = ['Dom Casmurro', 'O Cortiço', 'Capitães da Areia', 'Iracema'];
+const livroProcurado = 'O Cortiço';
+
+    if(livros.indexOf(livroProcurado) !== -1){
+        console.log(` O livro  "${livroProcurado} está disponivel.`);
+    } else { 
+        console.log(` O "${livroProcurado}"não está na lista!`);
+    }
 
 
 
+//nivel 13
+
+const precos = [100, 80, 50, 120];
+    
+const precoDesconto = precos.map(preco => preco * 0.9)
+console.log("Preços com desconto :", precoDesconto)
+        
 
 
 
+    
+    
 
