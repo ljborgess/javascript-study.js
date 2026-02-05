@@ -27,14 +27,16 @@ Sou **Analista e Desenvolvedor de Software (Dev)** e estou reforçando a base pa
 - [x] Arrays
 - [x] Laço de repetição `for`
 - [x] Método `forEach`
+- [x] Métodos avançados de arrays (`map`, `filter`, `reduce`)
 
 ⬆️ **Status atual:** Laços de repetição e iteração com arrays concluídos
 
 ---
+## Em andamento... 
+- [ ] Objetos
+
 
 ## 🔜 Próximos Conteúdos (em andamento)
-- [ ] Objetos
-- [ ] Métodos avançados de arrays (`map`, `filter`, `reduce`)
 - [ ] Boas práticas em JavaScript
 - [ ] Introdução ao Node.js
 - [ ] Módulos no Node
