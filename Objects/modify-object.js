@@ -16,3 +16,8 @@ console.log(estudante);
 estudante.nome = 'José Souzas;'// fazer alteração no valor das chaves
 console.log(estudante);
 
+
+const Estudante2 = {};
+Estudante2.nome = 'Ana Maria';
+console.log(Estudante2)
+
