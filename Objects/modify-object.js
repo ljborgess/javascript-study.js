@@ -21,3 +21,16 @@ const Estudante2 = {};
 Estudante2.nome = 'Ana Maria';
 console.log(Estudante2)
 
+const objPersonagem = { //realizando um delete de um value dentro de um object 
+ nome: "Gandalf",
+ classe: "mago",
+ nivel: "20",
+ aliado: {
+   nome: "Saruman",
+   classe: "mago"
+ },
+ status: "desaparecido"
+}
+
+delete objPersonagem.aliado 
+console.log(objPersonagem.aliado) //undefined
