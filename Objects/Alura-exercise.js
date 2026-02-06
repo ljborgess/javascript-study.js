@@ -5,7 +5,7 @@ const livro = {
     genero:"Ação",
 
 }
-console.log(livro);
+//console.log(livro);
 
 // livro.js
 
@@ -28,7 +28,7 @@ Ano: ${livro2.anoPublicacao}
 Gênero: ${livro2.genero}
 Idade de publicação: ${livro2.idadePublicacao} anos`;
 
-console.log(mostrarDetalhes);
+//console.log(mostrarDetalhes);
 
 
 
@@ -54,13 +54,15 @@ pessoa.endereço ={
 }
 
 function mostrarInfoPessoa(pessoa){
-  console.log("Nome:",pessoa.nome, "|tipo;", typeof pessoa.nome)
-  console.log("idade:",pessoa.idade, "|tipo;", typeof pessoa.idade)
-  console.log("solteiro:",pessoa.solteiro, "|tipo;", typeof pessoa.solteiro)
-  console.log("hobbies:",pessoa.hobbies, "|tipo;", typeof pessoa.hobbies)
-  console.log("endereço:",pessoa.endereço, "|tipo;", typeof pessoa.endereço)
+  //console.log("Nome:",pessoa.nome, "|tipo;", typeof pessoa.nome)
+  //console.log("idade:",pessoa.idade, "|tipo;", typeof pessoa.idade)
+  // console.log("solteiro:",pessoa.solteiro, "|tipo;", typeof pessoa.solteiro)
+  //console.log("hobbies:",pessoa.hobbies, "|tipo;", typeof pessoa.hobbies)
+  //console.log("endereço:",pessoa.endereço, "|tipo;", typeof pessoa.endereço)
 }
-console.log(mostrarInfoPessoa(pessoa))
+//console.log(mostrarInfoPessoa(pessoa))
+
+
 
 
 
