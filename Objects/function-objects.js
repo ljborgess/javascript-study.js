@@ -11,4 +11,7 @@ const estudante = {     // objeto aninhados
         return this.media >= mediaBase ? true : false
     }
 }
+//objetos prontos , com funções prontas , console "." log 
+//objeto global
+console.log('oi');
 console.log(estudante.estaAprovado(7))

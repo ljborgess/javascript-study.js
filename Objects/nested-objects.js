@@ -17,4 +17,4 @@ estudante.endereço = {
 }
 
 console.log(estudante)
-console.log(estudante.endereço.rua)
+console.log(estudante.endereço.rua)//pegar dentro no nested (aninhado)

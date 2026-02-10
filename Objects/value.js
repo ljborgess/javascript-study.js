@@ -5,8 +5,8 @@ const estudante = {
     cpf : '12341234122',
     turma : 'JavaScript',
     bolsista: true,
-    telefones: ['5511999998', '5511939998'],
+    telefones: ['5511999998', '5511939998'],//array dentro do objeto
     
 }
-
+                            //indice para indentficar qual valor quero que apareça 
 console.log(estudante.telefones[0]);
