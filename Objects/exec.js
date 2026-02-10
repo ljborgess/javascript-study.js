@@ -1,17 +1,22 @@
-const Client = { 
-    name: "Andre",
-    age: 32,
-    cpf:'12312321412',
-    email:"andre@dominio.com",
+const Pessoa ={ 
+  nome : "Carlos Siqueira",
+  notas : [7,8,9],
+
+
 }
 
-console.log(`O nome do cliente é ${Client.name} e essa pessoa tem ${Client.age} anos . Seu cpf é ${Client.cpf} e seu email está como ${Client.email}`);
 
-console.log(`Os 3 primeiros digitos do CPF de ${Client.name} é ${Client.cpf.substring(0,3)}`);
+const carro = { 
+  marca: "Chevrolet",
+  modelo: "Camaro",
+  ano: 2004,
+  cor: "amarelo",
+  rodas: 4,
+}
 
+for (let chave in carro){
+    const  texto =  `A(o) ${chave} é ${carro[chave]}`    
+        console.log(texto);
 
-const chaves = ["name", "age", "cpf", "email",];
+}  
 
-chaves.forEach((chave) => {
-  console.log(`A chave ${chave} tem valor ${Client[chave]}`);
-});
