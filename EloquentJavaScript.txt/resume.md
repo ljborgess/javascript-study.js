@@ -1,111 +1,132 @@
-Aritmetica = 
-
-∞ é usado para respetar a operação de restoX % Y 
-// resto da divisao 
-
-ex 314 % 100        ∞ = 2 
--------------------
-Numeros especiais =
-
- Os dois primeiros são `0` Infinity e `1` -Infinity
+### 1️⃣ Títulos sempre com ##
+### 2️⃣ Código sempre em bloco ```js
+### 3️⃣ Separar assuntos por linhas ---
+### 4️⃣ Sempre exemplo + explicação curta
 
 
- NaNSignifica "não é um número",
 
---------------------
-String = representativo de texto //Você pode usar aspas simples, aspas duplas ou crases para marcar sequências de caracteres,
-" La no mar" 
-"Deite-se no oceano"
-"Flutue no oceano"
+# 📘 Fundamentos do JavaScript
 
-uma barra invertida (\ \) dentro do texto entre aspas indica que o caractere seguinte possui um significado especial. (Escape de caractre, escaping the character)
-        "Esta é a primeira linha \n E esta é a segunda"
+---
 
-Unicode
+## 🔢 Aritmética
 
-------------------
-Cadeias de caracteres não podem ser divididas, multiplicadas ou subtraídas. O +operador `&` pode ser usado nelas, não para somar, mas para concatenar — para unir duas cadeias de caracteres. A seguinte linha produzirá a cadeia de caracteres "concatenate":
+### Operador de resto (%)
 
-"con" + "cat" + "e" + "nate"
+Retorna o resto da divisão:
+
+```js
+314 % 100 // 14
+
+⭐ Números especiais
+
+Infinity → infinito positivo
+
+-Infinity → infinito negativo
+
+NaN → Not a Number (não é número)
+
+"texto" * 2 // NaN
+
+🧵 Strings
+
+Representam textos.
+
+"texto"
+'texto'
+`texto`
+
+Escape de caracteres
+"Primeira linha \n Segunda linha"
+
+➕ Concatenação
+"con" + "cat" + "enar"
+// "concatenar"
+
+🧩 Template literals
+
+Permitem inserir valores dentro da string:
+
+`Metade de 100 é ${100 / 2}`
+
+⚙️ Operadores unários
+typeof
+
+Mostra o tipo do valor:
+
+typeof 4.5 // "number"
+typeof "x" // "string"
+
+🔘 Booleanos
+
+Resultado de comparações:
+
+3 > 2 // true
+3 < 2 // false
 
 
-${}de um template literal
-Strings entre crases (``), geralmente chamadas de literais de modelo (template literals ), podem fazer alguns truques a mais.Além de poderem abranger várias linhas, elas também podem incorporar outros valores.
+Operadores:
 
-`Metade de 100 é ${ 100 / 2 } `
--------------------
+<
 
-OPERADORES UNARIOS (UNARY OPERATORS)
-Nem todos os operadores são símbolos. Alguns são escritos como palavras. Um exemplo é o typeofoperador `&`, que produz um valor de string indicando o tipo do valor fornecido.
-console.log( typeof  4.5 )
- // → número 
-console.log( typeof  "x" )
- // → string
-operador menos (- -) pode ser usado tanto como um operador binário quanto como um operador unário.
-console.log(- ( 10 - 2 ))
- // → -8
+=
 
- -------------------
- VALORES BOOLEANOS (BOOLEAN VALUE)
- Eis uma maneira de produzir valores booleanos(comparação):
- console.log( 3 > 2 )
- // → verdadeiro 
- console.log( 3 < 2 )
- // → falso
+<=
 
-  -------------------
-  > "maior que" 
-  < "menor que"
-  >=(maior ou igual a), 
-  <=(menor ou igual a), 
-  ==(igual a),
-  !=(diferente de).
+==
 
-Em JavaScript, existe apenas um valor que não é igual a si mesmo, e esse valor é NaN(“não é um número”).
-console.log(NaN == NaN)
- // → falso
+!=
 
- ---------------------
- Operadores lógicos
- "raciocinar" sobre valores booleanos.
- `and`, e 
- `or`, ou 
-` not`, nao ! inverte o valor que lhe atribuiu 
-`&&`, e 
-'||',ou
-console.log(true && false)
- // → false 
-console.log(true && true) // → true
+NaN == NaN // false
 
-1 + 1 == 2 && 10 * 10 > 50
+🧠 Operadores lógicos
 
- ---------------------
-Operador Ternário(Operador condicional || conditional operator  )
-?
-if (x, y) a ? b : c
+&& → E
 
-usa o valor esquerdo com o sinal da verificacao
-, o resultado será `true` bquando a `x` for verdadeiro e c `false` caso contrário.
+|| → OU
 
------------------------
-valores vazios || Empty values
-null    -ausencia de valor significativo
-undefined   -ausencia de valor significativo
+! → NÃO
 
------------------------
-Conversão automatica de tipo || Automatic type conversion
+true && false // false
+true && true  // true
 
-console.log( 8 * null )
+❓ Operador ternário
+condição ? valor_true : valor_false
+
+📭 Valores vazios
+
+null → ausência intencional
+
+undefined → variável sem valor definido
+
+🔄 Conversão automática de tipos
+8 * null      // 0
+"5" - 1       // 4
+"5" + 1       // "51"
+"five" * 2    // NaN
+false == 0    // true
+
+
+Regra:
+
+JS tenta converter automaticamente
+
+quando não consegue → NaN
+```
+
+---
+#### curto circuito de operadores lógicos(&& ||)
+```js
+
+O ||    operador, por exemplo, retornará o valor à sua esquerda quando esse valor puder ser convertido para verdadeiro
+
+console.log( null || "user" )
+ // → user 
+console.log( "Agnes" || "user" )
+ // → Agnes
+ console.log( 0 || 100 );
+ // → 100 
+console.log( 0 ?? 100 );
  // → 0 
-console.log( "5" - 1 )
- // → 4 
-console.log( "5" + 1 )
- // → 51 
-console.log( "five" * 2 )
- // → NaN 
-console.log(false == 0 )
- // → true
-
- !!!O `int` null na primeira expressão se torna `int` 0 e o `number` "5" na segunda expressão se torna `int` 5(de string para número). No entanto, na terceira expressão, o JavaScript + tenta concatenar strings antes de somar os números, então o `number` 1 é convertido para `int` ( "1"de número para string).
-
- !!!!!Quando algo que não corresponde a um número de forma óbvia (como ` "five"n` ou `n` undefined) é convertido para um número, você obtém o valor `n` NaN.
+console.log( null ?? 100 );
+ // → 100
