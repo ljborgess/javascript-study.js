@@ -51,7 +51,7 @@ console.log(resultado);
 const resultado2 = usuarios.reduce((acc, usuario) => {
 
   acc.totalUsuarios++; // soma +1
-  acc.somaIdades += usuario.idade; // soma idade
+  acc.somaIdades += usuario.idade; //  somaIdade = somaIdade+usuario.idade
 
   return acc;
 
@@ -61,3 +61,16 @@ const resultado2 = usuarios.reduce((acc, usuario) => {
 });
 
 console.log(resultado2);
+
+
+const lista = [5,15,20]
+
+const result = lista.reduce((acc , numero)=>{
+    acc.soma += numero;
+    return acc
+
+},{
+    soma : 0,
+})
+
+console.log(result)
