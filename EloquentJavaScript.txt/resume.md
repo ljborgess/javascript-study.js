@@ -198,7 +198,7 @@ uma determinada condição for verdadeira
 }
 ```
 
-### Laços While && Do
+#### Laços While && Do
 ```js
         o fluxo de controle em loop nos permite retornar a um ponto do programa onde estavamos anteriormente e repeti-lo com o estado atual do programa .
         let  number = 0 ;
@@ -206,3 +206,36 @@ uma determinada condição for verdadeira
                 console.log(number); 
                 number = number + 2 ; 
         } // → 0 // → 2 // … etc.
+
+o fluxo ira continuar até a ultima instrucao validar-se verdadeira, apartir do momento que entrar  um "falso ", o lopping ele para.
+
+```
+
+##### DO 
+```js 
+um do laço é uma estrutura de controle semelhante a um while.
+sempre executa seu corpo pelo menos uma vez e só começa a verificar se deve parar após essa primeira execução
+let seuNome;
+do {
+  seuNome = prompt("Quem é voce?");
+} while (!yourName);
+console.log("Hello " + seuNome);
+Este programa irá obrigá-lo a inserir um nome.
+enquanto nao digitar um campo valido de nome, irá cair no do infinito
+``` 
+###### IDENTAÇÃO DE CÓDIGO
+Nos exemplos, adicionei espaços antes de instruções que fazem parte de uma instrução maior. Esses espaços não são obrigatórios — o computador aceitará o programa perfeitamente sem eles. Aliás, até mesmo as quebras de linha em programas são opcionais. Você poderia escrever um programa como uma única linha longa, se quisesse.
+```js 
+if (false != true) { 
+  console.log( "Faz sentido." );
+   if ( 1 < 2 ) { 
+    console.log( "Sem surpresas." ); 
+  } 
+}
+``` 
+###### LAÇOS for 
+
+```js     for  (inicialização; condição; incremento)
+for ( let  number = 0 ; number <= 12 ; number = number + 2 ) { 
+  console.log(number); 
+} // → 0 // → 2 // … etc.
