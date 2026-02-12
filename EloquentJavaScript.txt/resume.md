@@ -130,3 +130,79 @@ console.log( 0 ?? 100 );
  // → 0 
 console.log( null ?? 100 );
  // → 100
+
+ ```
+
+ #### Estrutura do Programa (Structure)
+```js
+
+Encadernações (BINDING) 
+
+vinculação ou Variavel
+
+let caught = 5*5 ;
+//definira uma ligação , se quisermos atribuir um valor por um operador 
+//O =operador pode ser usado a qualquer momento em associações existentes para desconectá-las de seu valor atual e fazê-las apontar para um novo valor:
+let  mood = "light" ;  // imaginar com um tentaculo , a refernecia captura um valor.
+console.log(mood); // → claro 
+mood = "dark" ; 
+console.log(mood); // → escuro
+
+var nome = "Aynda" //se comporta de maneira estranha essa variavel
+const nomes = ("Carlos","Marina")  // const significa constante , ela define uma associacao constante, nao alterável
+
+```
+
+### Nomes de vinculação (Binding Names)
+```js
+### O ambiente (the enviropment)
+    Quando um programa é inciado , o ambiente está vazio , O conjunto de associações e seus valores que existem em um determinado momento é chamado de ambiente 
+
+### Funções (Function)
+    Trecho de valor encapsulado.
+o binding ""prompt"" contém uma função que exibe uma pequena caixa de diálogo solicitando a entrada do usuário. Ela é usada da seguinte forma:
+prompt( "Digite a senha" );
+            // está invocando uma funcao , chamando , aplicando.
+            // os valores a serem passados ( nesse caso a string)são chamados de argumentos.
+            // funcoes diferentes apresentam , numeros diferntes ,argumentos diferentes.
+
+### console.log( function exemplo)
+    Funcao que escreve seus argumentos em algum dispotivo de saida  de texto.
+let  x = 30 ; 
+console.log( "o valor de x é" , x);
+ // → o valor de x é 30
+
+
+### Valores de Retorno (Return values)
+     As funções também podem produzir valores, caso em que não precisam ter um efeito colateral para serem úteis. Por exemplo, a função Math.maxrecebe qualquer quantidade de argumentos numéricos e retorna o maior.
+    console.log(Math.max( 2 , 4 ));
+ // → 4
+
+ ###fluxo de controle ( Control flow )
+                 As intruções são como uma historia , segue uma sequencia lógica de pensamento de cima para baixo.
+1* pede para inserir um numero 
+2* executada apos a primeira , mostra o quadrado desse numero
+    let  theNumber = Number(prompt( "Escolha um número" )); 
+        console.log( "Seu número é a raiz quadrada de " + theNumber * theNumber);
+                // funcao number comverte esse valor em um numero. pois o valor dessa string a resposta seria um number
+                //
+                                   
+### Execução Condicional (conditional execution)
+                // nem todos os programas sao caminhos retos , podem manter um caminho ramificado.  
+                //isso é chamado de execucação condicional
+essa condição e criado com a paalvra IF , no caso mais simples queremos que seja executal SE(IF)
+uma determinada condição for verdadeira
+    let  theNumber = Number(prompt( "Escolha um número" ));
+        if (!Number.isNaN(theNumber)) { 
+            console.log( "Seu número é a raiz quadrada de " + theNumber * theNumber); 
+}
+```
+
+### Laços While && Do
+```js
+        o fluxo de controle em loop nos permite retornar a um ponto do programa onde estavamos anteriormente e repeti-lo com o estado atual do programa .
+        let  number = 0 ;
+            while (number <= 12 ) { 
+                console.log(number); 
+                number = number + 2 ; 
+        } // → 0 // → 2 // … etc.
