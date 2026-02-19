@@ -28,12 +28,13 @@ Sou **Analista e Desenvolvedor de Software (Dev)** e estou reforçando a base pa
 - [x] Laço de repetição `for`
 - [x] Método `forEach`
 - [x] Métodos avançados de arrays (`map`, `filter`, `reduce`)
+- [x] Objetos
 
 ⬆️ **Status atual:** Laços de repetição e iteração com arrays concluídos
 
 ---
 ## Em andamento... 
-- [ ] Objetos
+- [ ] Poo
 
 
 ## 🔜 Próximos Conteúdos (em andamento)
