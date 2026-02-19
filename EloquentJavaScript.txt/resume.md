@@ -239,3 +239,14 @@ if (false != true) {
 for ( let  number = 0 ; number <= 12 ; number = number + 2 ) { 
   console.log(number); 
 } // → 0 // → 2 // … etc.
+``` 
+
+###### BREAKING OUT of a LOOP 
+Fazer com que a condição do loop produza um resultado falsenão é a única maneira de um loop terminar. A breakinstrução `if` tem o efeito de sair imediatamente do loop que o contém. Seu uso é demonstrado no seguinte programa, que encontra o primeiro número que é maior ou igual a 20 e divisível por 7:
+```js 
+for ( let  current = 20 ; current = current + 1 ) {
+   if (current % 7 == 0 ) { 
+    console.log(current); break ; 
+    // faz a verificação se os proximos numeros de 20 for dividido por 7 e restarem 0 , ele break , ou seja o resultado é : 
+  } 
+} // → 21

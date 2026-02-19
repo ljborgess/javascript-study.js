@@ -1,3 +1,5 @@
+//heranças
+
 const user = {
     nome :" Juliana",
     email: "j@j.com",
@@ -18,7 +20,10 @@ const admin = {
         console.log('Curso Criado!');
     }
 }
+//quantos primitivos , ou objetos , sao feitos apartir de um prototipos basicos , base . 
+//cadeia de prototipo , porque vai subidno , e esta ligado uns aos outros
+//herança de prototipo-herdando propriedades de outro
+Object.setPrototypeOf(admin,user)       //definindo um prototipo , que admin vai usar como prototipo(base)o objeto User.
 
-Object.setPrototypeOf(admin,user)
 admin.criarcurso()
 admin.exibirinfos()
