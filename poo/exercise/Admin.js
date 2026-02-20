@@ -20,3 +20,5 @@ class Admin extends User {
 }
 const novoAdmin = new Admin("Carlos", "c@s.com","2024-02-02")
 console.log(novoAdmin.desativarPerfil("Carlos","ativo"))
+novoAdmin.nome = "Roberta"
+console.log(novoAdmin.exibirInfos())
