@@ -11,20 +11,52 @@ export default class  User {
         this.#role = role || "estudante"
         this.#ativo = ativo
     }
-
-    #montaObjUser(){
-        return ({
-            nome: this.#nome,
-            email : this.#email,
-            nascimento : this.#nascimento,
-            role: this.#role,
-            role : this.#ativo
-        })
+    //tipo especial de metodo para somente leitura = METODO ACESSOR
+    //vc nao chama ele como metodo no index , chamou como propriedade
+    get nome(){
+        return this.#nome
+    }
+    get email(){
+        return this.#nome
+    }
+    get nascimento(){
+        return this.#nascimento
+    }
+    get role(){
+        return this.#role
+    }
+    get ativo(){
+        return this.#ativo
     }
 
+    //informação nova para uma determinada propriedade 
+    set nome(novoNome){
+        if(novoNome === ""){
+            throw new Error ('formato do nome não é valido')
+        }
+        this.#nome = novoNome
+        
+    }
+    set nome(novoEmail){
+        this.#nome = novoEmail
+        
+    }
+    set nome(novoNascimento){
+        this.#nome = novoNascimento
+        
+    }
+    set nome(novoRole){
+        this.#nome = novoRole
+        
+    }
+    set nome(novoAtivo){
+        this.#nome = novoAtivo
+        
+    }
+    
+
     exibirInfos(){
-        const objUser = this.#montaObjUser()
-        return `${objUser.nome}, ${objUser.email}`
+        return `${this.nome}, ${this.email}`
     }
 }
 
