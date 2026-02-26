@@ -250,3 +250,61 @@ for ( let  current = 20 ; current = current + 1 ) {
     // faz a verificação se os proximos numeros de 20 for dividido por 7 e restarem 0 , ele break , ou seja o resultado é : 
   } 
 } // → 21
+```
+
+###### Atualizando Vinculações Sucintamente 
+Javascript oferece um atalho para isso , para sempre "atualizar"
+contador += 1
+
+atalhos semelhantes funcionam para muitos operadores. 
+
+como 
+``` js 
+for(let numero = 0; numero <= 12; numero +=2){
+  console.log(numero);
+}
+```
+
+###### Despacho Com base em um valor com Switch
+
+nao ne incomum a aparencia desse código:
+```js 
+if (x == "value1") action1();
+else if (x == "value2") action2();
+else if (x == "value3") action3();
+else defaultAction();
+
+Existe uma construção chamada switch , que visa expressar esse despacho , de forma mais direta. infelizmente a sitaxe que o javaScript usa para isso é desajeitada.
+
+switch (prompt( "Como está o tempo?" )) {
+   case  "chuvoso" : 
+    console.log( "Lembre-se de trazer um guarda-chuva." );
+     break ;
+   case  "ensolarado" : 
+    console.log( "Vista-se com roupas leves." );
+   case  "nublado" : 
+    console.log( "Saia." );
+     break ;
+   default : 
+    console.log( "Tipo de tempo desconhecido!" );
+     break ; 
+}
+corresponde ao valor que o case for dado . caso der ensolarado , vai dar um log "vista-se com roupas leves" 
+```
+###### Assincrono 
+estou pulando , pois vi necessidade em ver isso.
+
+m um modelo de programação síncrona , as coisas acontecem uma de cada vez. Quando você chama uma função que executa uma ação demorada, ela só retorna quando a ação termina e pode retornar o resultado. Isso interrompe seu programa durante o tempo necessário para a execução da ação.
+
+um modelo assincrono , permite que varias coisas aconteça, ao mesmo tempo. 
+
+quando inicia uma ação ele continua a ser executado.
+a Assincronia tem dois lados
+-Ela facilita a expressão de programas que não se encaixam no modelo de controle linear.
+-Pelo contrário , pode tornar mais complicada a expressão de programas que seguem um modelo linear 
+
+#### Funções Callbacks 
+Uma abordagem para programação assincrona é fazer com que funções que precisam esperar por algo que recebam um argumento extra, uma função de retorno de chamada( callbacks).Por exemplo, a setTimeoutfunção, disponível tanto no Node.js quanto nos navegadores, espera um determinado número de milissegundos e então chama outra função.
+```js 
+setTimeout(() => console.log( "Tick" ), 500 );
+``` 

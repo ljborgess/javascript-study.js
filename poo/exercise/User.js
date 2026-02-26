@@ -53,7 +53,7 @@ export default class User {
     apagarPerfil(nome){
         return `perfil com o nome ${this.nome} apagado`
     }
-    exibirInfo(nome,email){
+    exibirInfo(){
         return `${this.nome, this.email}`
     }
 

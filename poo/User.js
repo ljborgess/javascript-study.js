@@ -29,7 +29,7 @@ export default class  User {
         return this.#ativo
     }
 
-    //informação nova para uma determinada propriedade 
+    //informação nova para uma determinada propriedade - modifica e encadeia, verifica etc etc...
     set nome(novoNome){
         if(novoNome === ""){
             throw new Error ('formato do nome não é valido')

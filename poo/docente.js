@@ -1,10 +1,9 @@
 
 //'strict mode'
-import User from "./User.js";
+import User from "../poo/User.js"
+
 
 //classes nao sao hoisted , tem que ser sempre depois do codigo class
-
-
 
 export default class Docente extends User { 
     constructor(nome,email,nascimento , role = "docente" , ativo = true){

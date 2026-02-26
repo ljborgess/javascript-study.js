@@ -9,9 +9,9 @@ export default class Admin extends User {
     criarCurso(nomeCurso,qtdVagas){
         return `curso ${nomeCurso} criado com ${qtdVagas} vagas`
     }
-    exibirInfos(){
+    exibirInfos(){  // logica interna modificada , porem pegando da super e jogando dentro da variavel const
         const infos = super.exibirInfos()
-        return `admin - ${infos}` 
+        return `admin - ${infos}`;
     }
 }
 
